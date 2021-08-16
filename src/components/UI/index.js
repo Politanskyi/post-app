@@ -1,7 +1,7 @@
-import DefaultButton from './DefaultButton';
-import DefaultInput from './DefaultInput';
-import DefaultDialog from './DefaultDialog';
-import DefaultSelect from './DefaultSelect';
+import DefaultButton from '@/components/UI/DefaultButton';
+import DefaultInput from '@/components/UI/DefaultInput';
+import DefaultDialog from '@/components/UI/DefaultDialog';
+import DefaultSelect from '@/components/UI/DefaultSelect';
 
 export default [
 	DefaultButton,

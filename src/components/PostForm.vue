@@ -1,9 +1,12 @@
 <template>
 	<form @submit.prevent>
 		<h4>Создание поста</h4>
-		<default-input v-model="post.title" placeholder="Название"/>
+		<default-input v-model="post.title"
+					   v-focus
+					   placeholder="Название"/>
 
-		<default-input v-model="post.body" placeholder="Описание"/>
+		<default-input v-model="post.body"
+					   placeholder="Описание"/>
 
 		<default-button @click="createPost"
 						style="align-self: flex-end; margin-top: 15px;">

@@ -6,8 +6,13 @@
 			<div><strong>Описание:</strong> {{ post.body }}</div>
 		</div>
 
-		<div>
-			<default-button @click="$emit('remove', post)">
+		<div class="post__btns">
+			<default-button @click="$router.push(`/posts/${post.id}`)">
+				Открыть
+			</default-button>
+
+			<default-button @click="$emit('remove', post)"
+							style="margin-left: 10px;">
 				Удалить
 			</default-button>
 		</div>
@@ -34,5 +39,10 @@ export default {
 	padding: 15px;
 	border: 2px solid teal;
 	margin-top: 15px;
+}
+
+.post__btns {
+	display: flex;
+	margin-left: 20px;
 }
 </style>
