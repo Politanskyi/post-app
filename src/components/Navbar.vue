@@ -3,6 +3,7 @@
 		<div class="navbar__btns">
 			<default-button @click="$router.push('/posts')">Посты</default-button>
 			<default-button @click="$router.push('/about')" style="margin-left: 20px;">О Компании</default-button>
+			<default-button @click="$router.push('/store')" style="margin-left: 20px;">Store</default-button>
 		</div>
 	</div>
 </template>
